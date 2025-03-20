@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 목록</title>
+    <link rel="stylesheet" href="../css/Posts.css">
+</head>
+<body>
+
+    <header>
+        <h1>아무 말 대잔치</h1>
+        <div class="profile-menu">
+            <img src="../images/profile_img.webp" alt="img" id="profile-icon">
+            <div class="dropdown-menu" id="dropdown-menu">
+                <a href="EditProfile.html">회원정보수정</a>
+                <a href="EditPassword.html">비밀번호변경</a>
+                <a href="#" id="logout-btn">로그아웃</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <p>안녕하세요,<br>아무 말 대잔치 <span>게시판</span> 입니다.</p>
+        <button class="post-btn" id="create-post-btn">게시글 작성</button>
+
+        <div class="post-list" id="post-list">
+            <!-- 게시글이 여기에 동적으로 추가 -->
+        </div>
+    </main>
+
+    <script src="../js/Posts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+body {
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    font-size: 32px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    margin-bottom: 17vh;
+}
+
+.back-button {
+    position: absolute;
+    left: 35vw;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background: none;
+    color: #000;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    &::hover{
+        background-color: none;
+    }
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.profile-title{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.profile-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 20px 0; */
+}
+
+.error{
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+.profile-preview {
+    width: 149px;
+    height: 149px;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.plus-icon {
+    font-size: 48px;
+    color: black;
+    font-weight: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+}
+
+input {
+    width: 355px;
+    height: 33px;
+    /* padding: 10px; */
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sign-btn {
+    width: 355px;
+    padding: 10px;
+    background-color: #ACA0EB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.sign-btn:hover {
+    background-color: #7F6AEE;
+}
+
+.login-button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.profile-label {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 280px;
+    /* color: gray; */
+}
+
+.email-label{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 310px;
+}
+
+.pass-label{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 298px;
+}
+.confirm-label{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 265px;
+}
+.nickname-label{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 310px;
+}

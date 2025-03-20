@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 상세 조회</title>
+    <link rel="stylesheet" href="../css/Post.css">
+</head>
+<body>
+
+    <header>
+        <button id="back-btn" class="back-button"><</button>
+        <h1>아무 말 대잔치</h1>
+        <div class="profile-menu">
+            <img src="../images/profile_img.webp" alt="img" id="profile-icon">
+            <div class="dropdown-menu" id="dropdown-menu">
+                <a href="EditProfile.html">회원정보수정</a>
+                <a href="EditPassword.html">비밀번호변경</a>
+                <a href="#" id="logout-btn">로그아웃</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article class="post">
+            <div class="title-box">
+                <div class="title">제목 1</div>
+                <div class="post-meta">
+                    <p class="author">더미 작성자&nbsp;&nbsp;&nbsp;&nbsp;2021-01-01 00:00:00</p>
+                    <div class="post-buttons">
+                        <button id="edit-btn">수정</button>
+                        <button id="delete-btn">삭제</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-image">
+                <img src="../images/profile_img.webp" alt="게시글 이미지">
+            </div>
+
+            <div class="post-content">
+                무엇을 얘기할까요? 아무말이라면, 삶은 항상 놀라운 모험이라고 생각합니다. 우리는 매일 새로운 경험을 하고 배우며 성장합니다. 때로는 어려움과 도전이 있지만, 그것들이 우리를 더 강하고 지혜롭게 만듭니다. 또한 우리는 주변의 사람들과 연결되며 사랑과 지지를 받습니다. 그래서 우리의 삶은 소중하고 의미가 있습니다.
+자연도 아름다운 이야기입니다. 우리 주변의 자연은 끝없는 아름다움과 신비로움을 담고 있습니다. 산, 바다, 숲, 하늘 등 모든 것이 우리를 놀라게 만들고 감동시킵니다. 자연은 우리의 생명과 안정을 지키며 우리에게 힘을 주는 곳입니다.
+마지막으로, 지식을 향한 탐구는 항상 흥미로운 여정입니다. 우리는 끝없는 지식의 바다에서 배우고 발견할 수 있으며, 이것이 우리를 더 깊이 이해하고 세상을 더 넓게 보게 해줍니다.
+그런 의미에서, 삶은 놀라움과 경이로움으로 가득 차 있습니다. 새로운 경험을 즐기고 항상 앞으로 나아가는 것이 중요하다고 생각합니다.
+            </div>
+            <div class="stats">
+                <button id="like-btn" class="disabled">123<div>좋아요</div></button>
+                <div class="stat-cnt" >123<div>조회수</div></div>
+                <div class="stat-cnt">123<div>댓글</div></div>
+            </div>
+        </article>
+        <section class="comments">
+            <div class="comment-input-container">
+                <div class="input-box">
+                    <textarea id="comment-input" placeholder="댓글을 남겨주세요!"></textarea>
+                </div>
+                <button id="comment-btn" disabled>댓글 등록</button>
+            </div>
+            <div class="comment-list">
+                <div class="comment">
+                    <!-- <div class="comment-header">
+                        <p class="comment-author"><strong>더미 작성자 1</strong> · 2021-01-01 00:00:00</p>
+                    </div>
+                    <div class="comment-cnt">
+                        <p class="comment-content">내용</p>
+                        <div class="comment-buttons">
+                            <button class="edit-comment-btn">수정</button>
+                            <button class="delete-comment-btn">삭제</button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="../js/Post.js"></script>
+
+</body>
+</html>

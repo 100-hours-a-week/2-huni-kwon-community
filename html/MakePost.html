@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 작성</title>
+    <link rel="stylesheet" href="../css/MakePost.css">
+</head>
+<body>
+    <header>
+        <button id="back-btn" class="back-button"><</button>
+        <h1>아무 말 대잔치</h1>
+        <div class="profile-menu">
+            <img src="../images/profile_img.webp" alt="img" id="profile-icon">
+            <div class="dropdown-menu" id="dropdown-menu">
+                <a href="EditProfile.html">회원정보수정</a>
+                <a href="EditPassword.html">비밀번호변경</a>
+                <a href="#" id="logout-btn">로그아웃</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h2>게시글 작성</h2>
+
+        <form id="post-form">
+            <label for="title">제목*</label>
+            <input type="text" id="title" placeholder="제목을 입력해주세요. (최대 26글자)" maxlength="26">
+
+            <label for="content">내용*</label>
+            <textarea id="content" placeholder="내용을 입력해주세요."></textarea>
+            <span class="helper-text" id="content-helper">* helper text</span>
+
+            <label for="image-upload">이미지</label>
+            <input type="file" id="image-upload" accept="image/*">
+
+            <button type="submit" class="submit-btn" id="submit-btn" disabled>완료</button>
+        </form>
+    </main>
+
+    <script src="../js/MakePost.js"></script>
+
+</body>
+</html>
